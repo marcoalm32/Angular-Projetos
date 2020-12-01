@@ -1,0 +1,31 @@
+<div class="myForm">
+        <mat-card>
+            <mat-card-title class="title-form">My Client</mat-card-title>
+            <mat-card-content>
+                <div class="form" [formGroup]="formRegister">
+                    <mat-form-field>
+                        <input matInput placeholder="your name" formControlName="name" #name>
+                        <mat-icon matSuffix>person</mat-icon>
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input matInput placeholder="your email" formControlName="email">
+                        <mat-icon matSuffix>email</mat-icon>
+                    </mat-form-field>
+                    <mat-form-field>
+                        <mat-select placeholder="favorite food" formControlName="food">
+                        <mat-option *ngFor="let food of foods" [value]="food">
+                                {{ food }}
+                        </mat-option>
+                            
+                        </mat-select>
+                        <mat-icon matSuffix>fastfood</mat-icon>
+                    </mat-form-field>
+                    <div class="btn">
+                        <button mat-button color="primary" [disabled]="!formRegister.valid" (click)="onSubmit()">Register</button>
+                        <button mat-button color="accent" [disabled]="!formRegister.valid" (click)="cancel()">Cancel</button>
+                    </div>
+                    </div>
+            
+            </mat-card-content>
+        </mat-card>
+</div>

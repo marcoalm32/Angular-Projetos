@@ -1,0 +1,26 @@
+.home {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 50px auto;
+    box-shadow: 4px 4px 4px 4px rgb(126, 121, 121);
+}
+
+.delete {
+    margin-left: 15px;
+}
+
+.title-home {
+    text-align: center;
+    font: bold 25px arial;
+}
+
+h2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

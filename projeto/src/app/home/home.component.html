@@ -1,0 +1,20 @@
+
+<div class="home">
+    <mat-card>
+        <mat-card-title class="title-home">My Clients</mat-card-title>
+        <mat-card-content>
+            <div *ngIf="people$ | async; let people">
+                <ul>
+                    <li *ngFor="let p of people">
+                       <h2> {{ p.name }} - {{ p.email }} - {{ p.food }}
+                        <button mat-button color="warn" (click)="deleteClient()">
+                            <mat-icon>delete</mat-icon>
+                        </button>
+                       </h2> 
+                       
+                    </li>
+                </ul>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>

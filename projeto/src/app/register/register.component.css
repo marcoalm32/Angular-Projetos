@@ -1,0 +1,25 @@
+.myForm {
+    margin-top: 50px;
+}
+
+.title-form {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.form {
+    max-width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+}
+
+.btn {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
